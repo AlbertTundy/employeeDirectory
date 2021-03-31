@@ -14,7 +14,7 @@ function MainTable({headings, users, filter}){
                   key={name}
                   style={{ width }}
                   onClick={() => {
-                    filter(name.toLowerCase());
+                    filterFunc(name.toLowerCase());
                   }}
                 >
                   {name}
