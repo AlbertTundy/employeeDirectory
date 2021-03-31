@@ -38,9 +38,10 @@ export default class DataFunction extends React.Component{
         return(
             <>
             {/* navbar with handle search */}
-            
+            <NavBar handleSearch={this.handleSearch}> </NavBar>
             
             {/* MainTable with filter */}
+            <MainTable users={this.state.filteredUsers} filter={this.filter} headings={this.headings}></MainTable>
             </>
         )
     }
