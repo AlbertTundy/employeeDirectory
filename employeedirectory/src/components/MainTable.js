@@ -1,5 +1,5 @@
 import React from "react"
-import tableBody from "./tableBody"
+import TableBody from "./TableBody"
 
 function MainTable({headings, users, filter}){
     return (
@@ -24,7 +24,7 @@ function MainTable({headings, users, filter}){
             })}
           </tr>
         </thead>
-            <tableBody users={users}></tableBody>
+            <TableBody users={users}></TableBody>
             </table>
         </>
 
