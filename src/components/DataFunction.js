@@ -21,6 +21,7 @@ export default class DataFunction extends React.Component{
     // componentDidMount life cycle method that will fire axios call on page load.
     componentDidMount(){
         Axios.employeeApi().then(results => {
+          console.log(results)
             this.setState({
                 users: results.data.results,
                 filteredUsers: results.data.results
